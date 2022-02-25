@@ -2,5 +2,25 @@
   "dependencies": {
     "express": "^4.17.3",
     "mongoose": "^6.2.3"
-  }
+  },
+  "name": "motion-social-api",
+  "description": "Social Network API (NoSQL)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victoriatsitskishvili/Motion-Social-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victoriatsitskishvili/Motion-Social-API/issues"
+  },
+  "homepage": "https://github.com/victoriatsitskishvili/Motion-Social-API#readme"
 }
