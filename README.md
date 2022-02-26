@@ -9,7 +9,7 @@ Social Network API is an API for a social network web application where users ca
 
 ## SS 
 
-
+ <img width="1335" alt="Screen Shot 2022-02-26 at 5 01 35 PM" src="https://user-images.githubusercontent.com/89715481/155860488-a983df32-ca20-40c4-b3a8-76e53a38ef53.png">
 
 ## Table of Contents 
   
@@ -60,7 +60,7 @@ Social Network API is an API that is being used by a startup company for their s
   
   ## Applications
 1. Insomnia 
-2. Screencastify - 
+2. Video Recording - https://drive.google.com/file/d/15W_UeLhzidnh5-fm8-uGpz6t29Eo6kAG/view?usp=sharing
   
   ## Questions
   
