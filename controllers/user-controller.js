@@ -53,31 +53,41 @@ const userController = {
       .catch(err => res.json(err));
   },
 
-  // to add a friend to a list //
 
-  addFriend({ params, body }, res) {
-    User.findOneAndUpdate({ _id: req.params.userId }, { $addToSet: { friends: req.params.friendId } }, { new: true })
-      .then(dbUserData => {
+
+  // to add a friend to a list // 
+  addFriend(req, res) {
+    User.findOneAndUpdate(
+      { _id: req.params.userId }, 
+      { $addToSet: { friends: req.params.friendId } },
+      { new: true })
+      .then((dbUserData) => {
         if (!dbUserData) {
-          res.status(404).json({ message: 'No user found with this id' });
-          return;
+          return res.status(404).json({ message: 'No user found with this id' });
         }
         res.json(dbUserData);
       })
-      .catch(err => res.json(err));
-    },
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  },
+
 
   // to remove a friend from a list // 
-  removeFriend({ params, body }, res) {
+  removeFriend(req, res) {
     User.findOneAndUpdate({ _id: req.params.userId }, { $pull: { friends: req.params.friendId } }, { new: true })
-    .then(dbUserData => {
+      .then((dbUserData) => {
         if (!dbUserData) {
-          res.status(404).json({ message: 'No user found with this id' });
-          return;
+          return res.status(404).json({ message: 'No user found with this id' });
         }
         res.json(dbUserData);
       })
-      .catch(err => res.json(err))
-    }
-}
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  },
+};
+
 module.exports = userController;

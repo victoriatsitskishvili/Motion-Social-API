@@ -16,6 +16,9 @@ router.route('/').get(getUsers).post(createUser);
 router.route('/:userId').get(getUserById).put(updateUser).delete(deleteUser);
 
 // to get api friends id // 
+// localhost:3001/api/users/:userId      /friends/:friendId
+//                          params.userId        /params.friendId
+
 router.route('/:userId/friends/:friendId').post(addFriend).delete(removeFriend);
 
 module.exports = router;
