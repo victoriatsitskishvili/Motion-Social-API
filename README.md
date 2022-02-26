@@ -58,7 +58,7 @@ Social Network API is an API that is being used by a startup company for their s
    
   Create issues and pull requests, link any external documentation and make sure to use new branches and good commit messages once you adding additional information to this repo
   
-  ## Applications being used 
+  ## Applications
 1. Insomnia 
 2. Screencastify - 
   
